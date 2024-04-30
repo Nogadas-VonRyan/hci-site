@@ -82,8 +82,9 @@ function unset_tab_background(element, content) {
 	element.style.backgroundColor = "#ffffff";
 	element.style.color = "#161d6f";
 
-	// content.style.display = "none";
-	console.log(content.style)
+	if(!content) return;
+	content.style.display = "none";
+	//console.log(content)
 }
 
 function set_tab_background(element, content) {
