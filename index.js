@@ -61,3 +61,88 @@ function prevSlide() {
 		visible_pages[i].style.display = "block";
 	}
 }
+
+function changeArticle() {
+	let new_issuance = document.getElementById("new_issuance");
+	let advisories = document.getElementById("advisories");
+	let news = document.getElementById("news");
+	let programs = document.getElementById("programs");
+
+	let new_issuance_content = document.getElementById(
+		"new_issuance_content"
+	);
+	let advisories_content = document.getElementById(
+		"advisories_content"
+	);
+	let news_content = document.getElementById("news_content");
+	let programs_content = document.getElementById("programs_content");
+}
+
+function unset_tab_background(element, content) {
+	element.style.backgroundColor = "#ffffff";
+	element.style.color = "#161d6f";
+
+	// content.style.display = "none";
+	console.log(content.style)
+}
+
+function set_tab_background(element, content) {
+	let new_issuance = document.getElementById("new_issuance");
+	let advisories = document.getElementById("advisories");
+	let news = document.getElementById("news");
+	let programs = document.getElementById("programs");
+
+	let new_issuance_content = document.getElementById(
+		"new_issuance_content"
+	);
+	let advisories_content = document.getElementById(
+		"advisories_content"
+	);
+	let news_content = document.getElementById("news_content");
+	let programs_content = document.getElementById("programs_content");
+
+	if (new_issuance != element)
+		unset_tab_background(new_issuance, new_issuance_content);
+	if (advisories != element)
+		unset_tab_background(advisories, advisories_content);
+	if (news != element) unset_tab_background(news, news_content);
+	if (programs != element)
+		unset_tab_background(programs, programs_content);
+
+	element.style.backgroundColor = "#161d6f";
+	element.style.color = "#ffffff";
+
+	content.style.display = "block";
+}
+
+function set_new_issuance() {
+	let new_issuance = document.getElementById("new_issuance");
+	let new_issuance_content = document.getElementById(
+		"new_issuance_content"
+	);
+
+	set_tab_background(new_issuance, new_issuance_content);
+}
+
+function set_advisories() {
+	let advisories = document.getElementById("advisories");
+	let advisories_content = document.getElementById(
+		"advisories_content"
+	);
+
+	set_tab_background(advisories, advisories_content);
+}
+
+function set_news() {
+	let news = document.getElementById("news");
+	let news_content = document.getElementById("news_content");
+
+	set_tab_background(news, news_content);
+}
+
+function set_programs() {
+	let programs = document.getElementById("programs");
+	let programs_content = document.getElementById("programs_content");
+
+	set_tab_background(programs, programs_content);
+}

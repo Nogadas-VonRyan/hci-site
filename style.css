@@ -58,6 +58,7 @@ button {
 	color: #ffffff;
 	width: 300px;
 	height: 100vh;
+	z-index: 2;
 }
 
 .sidebar hr {
@@ -137,7 +138,8 @@ header img {
 .side-1,
 .side-2,
 .side-3,
-.side-4 {
+.side-4,
+#advisories_content {
     display: none;
 }
 
@@ -174,11 +176,19 @@ header img {
 	height: 150px;
 }
 
+.side-3 {
+	font-size: 13.5px;
+}
+
+.side-3 img {
+	width: 100%;
+}
+
 .side-menu-page-control {
 	margin-left: 2rem;
 }
 
-.tab {
+.articles {
 	padding: 1rem;
 	color: black;
 	background-color: white;
@@ -186,8 +196,39 @@ header img {
 	margin: 1rem;
 }
 
-.tab h2 {
+.articles h2 {
     background-color: #161d6f;
     color: white;
     padding-left: 1rem;
+}
+
+.e-centers {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.e-centers img {
+	width: 200px;
+	height: 130px;
+	border-radius: 2rem;
+	border: 3px solid black;
+}
+
+.tab {
+	display: flex;
+	justify-content: center;
+}
+
+.tab div {
+	border: 1px solid rgb(30, 50, 138);
+	padding: 1rem;
+	padding-left: 5rem;
+	padding-right: 5rem;
+}
+
+.tab div:hover,
+.tab_pressed {
+	background-color: #161d6f;
+	color: white;
+	cursor: pointer;
 }
