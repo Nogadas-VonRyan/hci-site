@@ -13,6 +13,11 @@ body {
 	background-blend-mode: overlay;
 }
 
+p {
+	width: 90%;
+	margin: auto;
+}
+
 nav {
 	position: sticky;
 	top: 0;
@@ -265,6 +270,16 @@ header img {
 	background-color: #161d6f;
 	color: white;
 	cursor: pointer;
+}
+
+.bottom-menus {
+	display: flex;
+}
+
+.bottom-menus div {
+	width: 300px;
+	padding: 0.3rem;
+	height: fit-content;
 }
 
 footer {
