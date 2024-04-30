@@ -205,6 +205,11 @@ header img {
 	padding-left: 1rem;
 }
 
+.articles p {
+	margin-left: 5rem;
+	margin-right: 5rem;
+}
+
 .e-centers {
 	display: flex;
 	justify-content: space-evenly;
