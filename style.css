@@ -255,7 +255,6 @@ header img {
 	background-color: #161d6f;
 	color: white;
 	padding-left: 1rem;
-	margin-top: 0;
 }
 
 .new_issuance {
@@ -336,6 +335,7 @@ header img {
 	background-color: #161d6f;
 	color: #dbe2ef;
 	/* #c7ffd8; */
+	background-image: linear-gradient(to right, rgb(4, 2, 118) , rgb(145, 7, 7));
 }
 
 .bottom-side-menu-content {
