@@ -61,28 +61,25 @@ button {
 .header-sliders {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	margin-top: 2rem;
 }
 
 .header-slider img {
 	width: 900px;
 	height: 300px;
+	margin: 2rem;
 }
 
 .header-prev {
-	position: absolute;
-	left: 17%;
-	top: 55%;
 	font-size: 30px;
 	cursor: pointer;
 }
 
 .header-next {
-	position: absolute;
-	right: 17%;
-	top: 55%;
 	font-size: 30px;
 	cursor: pointer;
+	/* margin: auto; */
 }
 
 .sidebar {
@@ -141,12 +138,20 @@ button {
 	}
 }
 
+hr {
+	margin: 0;
+}
+
 header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 1rem;
 	/* padding-right: 20rem; */
+	background-image: url("file.webp");
+	background-size: cover;
+	background-position: center;
+	background-color: rgba(0, 0, 0, 0.644);
+	background-blend-mode: overlay;
 }
 
 header img {
@@ -170,18 +175,14 @@ header img {
 }
 
 .prev {
-	position: absolute;
-	left: 10px;
-	top: 100%;
 	font-size: 30px;
 	cursor: pointer;
+	margin: auto;
 }
 
 .next {
-	position: absolute;
-	right: 10px;
-	top: 100%;
 	font-size: 30px;
+	margin: auto;
 	cursor: pointer;
 }
 
