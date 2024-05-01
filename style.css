@@ -57,12 +57,21 @@ button {
 	border-radius: 4px;
 }
 
+.seal {
+	margin-left: auto;
+	margin-right: 3rem;
+}
+
+.seal img {
+	width: 50px;
+	height: 50px;
+}
 
 .header-sliders {
 	display: flex;
-	justify-content: center;
+	/* justify-content: center; */
 	align-items: center;
-	margin-top: 2rem;
+	padding-left: 1rem;
 }
 
 .header-slider img {
@@ -80,6 +89,16 @@ button {
 	font-size: 30px;
 	cursor: pointer;
 	/* margin: auto; */
+}
+
+.header-content {
+	background-image: url("file.webp");
+	background-size: cover;
+	background-position: center;
+	background-color: rgba(0, 0, 0, 0.644);
+	background-blend-mode: overlay;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
 }
 
 .sidebar {
@@ -144,34 +163,35 @@ hr {
 
 header {
 	display: flex;
-	justify-content: center;
+	justify-content: start;
 	align-items: center;
+	padding-left: 4rem;
 	/* padding-right: 20rem; */
-	background-image: url("file.webp");
+	/* background-image: url("file.webp");
 	background-size: cover;
 	background-position: center;
 	background-color: rgba(0, 0, 0, 0.644);
-	background-blend-mode: overlay;
+	background-blend-mode: overlay; */
+	background-color: #060B43;
 }
 
 header img {
-	width: 150px;
-	height: 150px;
+	width: 80px;
+	height: 80px;
 }
 
 .republic {
-	font-size: 16px;
+	font-size: 13px;
 }
 
 .bureau {
-	font-size: 25px;
+	font-size: 20px;
 }
 
 .side-menus {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-	margin: 1rem;
 }
 
 .prev {
@@ -248,8 +268,6 @@ header img {
 	padding: 1rem;
 	color: black;
 	background-color: white;
-	margin-top: 3rem;
-	margin: 1rem;
 }
 
 .articles h2 {
