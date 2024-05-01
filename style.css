@@ -190,7 +190,7 @@ header img {
 
 .side-menus {
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	justify-content: space-evenly;
 }
 
@@ -250,6 +250,16 @@ header img {
 .side-menu-content img {
 	width: 300px;
 	height: 150px;
+}
+
+@media (max-width: 1440px) {
+	.side-menu {
+		width: fit-content;
+	}
+
+	.side-menu img {
+		width: 100%;
+	}
 }
 
 .side-3 {
