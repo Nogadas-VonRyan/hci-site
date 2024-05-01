@@ -15,9 +15,19 @@ function slide() {
 }
 
 let sidemenu_page = 0;
+let max_slides = 5;
+
+function getSlidesByIndex(index){
+	let start_index = index * 4;
+	let sidemenus = document.querySelectorAll(".side-menu");
+	return [sidemenus[start_index],
+	sidemenus[start_index + 1],
+	sidemenus[start_index + 2],
+	sidemenus[start_index + 3]]
+}
 
 function nextSlide() {
-	sidemenu_page = (sidemenu_page + 1) % 4;
+	sidemenu_page = (sidemenu_page + 1) % max_slides;
 
 	console.log(sidemenu_page);
 	//set all elements to none
@@ -27,9 +37,7 @@ function nextSlide() {
 		sidemenus[i].style.display = "none";
 	}
 
-	let visible_pages = document.querySelectorAll(
-		".side-" + sidemenu_page
-	);
+	let visible_pages = getSlidesByIndex(sidemenu_page)
 
 	for (let i in visible_pages) {
 		if (!sidemenus[i].style) continue;
@@ -39,7 +47,7 @@ function nextSlide() {
 
 function prevSlide() {
 	if (sidemenu_page == 0) {
-		sidemenu_page = 3;
+		sidemenu_page = max_slides-1;
 	} else {
 		sidemenu_page -= 1;
 	}
@@ -51,10 +59,8 @@ function prevSlide() {
 		if (!sidemenus[i].style) continue;
 		sidemenus[i].style.display = "none";
 	}
-
-	let visible_pages = document.querySelectorAll(
-		".side-" + sidemenu_page
-	);
+	
+	let visible_pages = getSlidesByIndex(sidemenu_page)
 
 	for (let i in visible_pages) {
 		if (!sidemenus[i].style) continue;
@@ -82,8 +88,9 @@ function unset_tab_background(element, content) {
 	element.style.backgroundColor = "#ffffff";
 	element.style.color = "#161d6f";
 
-	// content.style.display = "none";
-	console.log(content.style)
+	if(!content) return;
+	content.style.display = "none";
+	//console.log(content)
 }
 
 function set_tab_background(element, content) {
