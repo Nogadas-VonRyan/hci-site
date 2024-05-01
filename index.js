@@ -15,7 +15,7 @@ function slide() {
 }
 
 let sidemenu_page = 0;
-let max_slides = 5;
+let max_slides = 4;
 
 function getSlidesByIndex(index){
 	let start_index = index * 4;
@@ -152,4 +152,15 @@ function set_programs() {
 	let programs_content = document.getElementById("programs_content");
 
 	set_tab_background(programs, programs_content);
+}
+
+//===================================================================//
+
+
+function slide(){}
+
+let sliders = document.querySelectorAll(".header-slider")
+for(let i in sliders){
+	if(i==0) continue;
+	sliders[i].style.display = "none"
 }

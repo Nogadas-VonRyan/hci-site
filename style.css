@@ -57,6 +57,34 @@ button {
 	border-radius: 4px;
 }
 
+
+.header-sliders {
+	display: flex;
+	justify-content: center;
+	margin-top: 2rem;
+}
+
+.header-slider img {
+	width: 900px;
+	height: 300px;
+}
+
+.header-prev {
+	position: absolute;
+	left: 17%;
+	top: 55%;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.header-next {
+	position: absolute;
+	right: 17%;
+	top: 55%;
+	font-size: 30px;
+	cursor: pointer;
+}
+
 .sidebar {
 	position: fixed;
 	left: -350px;
@@ -144,7 +172,7 @@ header img {
 .prev {
 	position: absolute;
 	left: 10px;
-	top: 50%;
+	top: 100%;
 	font-size: 30px;
 	cursor: pointer;
 }
@@ -152,7 +180,7 @@ header img {
 .next {
 	position: absolute;
 	right: 10px;
-	top: 50%;
+	top: 100%;
 	font-size: 30px;
 	cursor: pointer;
 }
@@ -226,9 +254,10 @@ header img {
 	background-color: #161d6f;
 	color: white;
 	padding-left: 1rem;
+	margin-top: 0;
 }
 
-.new_issuance{
+.new_issuance {
 	margin-left: 5rem;
 	margin-right: 5rem;
 }
@@ -252,7 +281,8 @@ header img {
 }
 
 .tab div {
-	border: 1px solid rgb(30, 50, 138);
+	border: 1px solid #161D6F;
+	/* rgb(30, 50, 138); */
 	padding: 1rem;
 	padding-left: 5rem;
 	padding-right: 5rem;
@@ -274,12 +304,47 @@ header img {
 
 .bottom-menus {
 	display: flex;
+	justify-content: space-around;
 }
 
 .bottom-menus div {
 	width: 300px;
 	padding: 0.3rem;
 	height: fit-content;
+}
+
+.bottom-side-menu {
+	border: 1px solid white;
+	width: fit-content;
+	padding: 0.1rem;
+	background-color: #dbe2ef;
+	margin: 1rem;
+}
+
+.bottom-side-menu:hover {
+	transform: scale(110%);
+	z-index: 1;
+}
+
+.bottom-side-menu h2 {
+	border: 5px solid white;
+	padding: 0.2rem;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	text-align: center;
+	background-color: #161d6f;
+	color: #dbe2ef;
+	/* #c7ffd8; */
+}
+
+.bottom-side-menu-content {
+	/* border: 5px solid white; */
+	padding: 0.2rem;
+	color: #202020;
+}
+
+.visitor-count {
+	text-align: center;
 }
 
 footer {
